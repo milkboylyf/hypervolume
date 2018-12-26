@@ -1,0 +1,32 @@
+1，基本介绍：
+
+PPPA算法，近似计算n个点在边界范围内的超体积度量值(hypervolume)，复杂度接近线性
+
+计算问题及该算法的工作原理都在图中有说明
+
+
+
+
+
+2，使用：在matlab中输入
+mexPPPA( points , bounds, Samp=10000000, numK = 6)
+
+
+其中：
+points是n行m列矩阵：种群规模为n的m维待测种群
+
+bounds是1行m列矩阵：测量边界
+
+Samp 是单位采样点个数，默认为10,000,000
+
+numK 是最大分割层数，默认为6
+
+
+
+
+3，编译命令：
+
+在matlab中输入：mex mexPPPA.cpp
+
+
+
